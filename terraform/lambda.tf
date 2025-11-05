@@ -62,4 +62,5 @@ resource "aws_lambda_function" "cortex_custom_lambda_2" {
   tags = {
     yor_trace = "8bb83fd0-d44c-41f8-989d-d53e06a2599f"
   }
+  code_signing_config_arn = "CKV_ANY"
 }
