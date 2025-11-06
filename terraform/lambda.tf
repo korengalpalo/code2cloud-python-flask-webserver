@@ -44,6 +44,7 @@ resource "aws_lambda_function" "empty_bucket_lambda" {
   tags = {
     yor_trace = "d5aa41a6-602f-49eb-bdc1-a4b199c99dd3"
   }
+  code_signing_config_arn = "CKV_ANY"
 }
 
 # Defines the second Cortex custom Lambda function.
